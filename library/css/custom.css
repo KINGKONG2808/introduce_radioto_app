@@ -1,3 +1,30 @@
-body {
-  background-color: #ffffff;
+html {
+  /*scroll-behavior: smooth;*/
+}
+html body .nav-menu .container .navbar-brand .img-fluid {
+  height: 60px;
+  width: 60px;
+}
+html body #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: linear-gradient(hsl(17deg 95% 50%), hsl(42deg 94% 57%));
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+html body #myBtn :hover {
+  background: linear-gradient(hsl(42deg 94% 57%), hsl(17deg 95% 50%));
+  color: white;
+}
+html body #contact .container .social-icons a:hover {
+  background: linear-gradient(hsl(42deg 94% 57%), hsl(17deg 95% 50%));
+  color: white;
 }

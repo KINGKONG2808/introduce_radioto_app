@@ -1,4 +1,53 @@
-@color: #ffffff;
-body {
-    background-color: @color;
+@color-first: hsl(17deg 95% 50%);
+@color-second: hsl(42deg 94% 57%);
+
+html {
+    /*scroll-behavior: smooth;*/
+
+    body {
+        .nav-menu {
+            .container {
+                .navbar-brand {
+                    .img-fluid {
+                        height: 60px; 
+                        width: 60px;
+                    }
+                }
+            }
+        }
+    
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 15px;
+            border: none;
+            outline: none;
+            background: linear-gradient(@color-first, @color-second);
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+
+            :hover {
+                background: linear-gradient(@color-second, @color-first);
+                color: white;
+            }
+        }
+
+        #contact {
+            .container {
+                .social-icons {
+                    a {
+                        &:hover {
+                            background: linear-gradient(@color-second, @color-first);
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

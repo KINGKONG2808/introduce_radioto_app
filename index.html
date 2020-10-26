@@ -30,10 +30,10 @@
     <link href="./library/css/style.css" rel="stylesheet" />
     <!-- Custom css -->
     <link href="./library/css/custom.css" rel="stylesheet" />
-</head><span id="warning-container"><i data-reactroot=""></i></span>
+</head>
+<span id="warning-container"><i data-reactroot=""></i></span>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
-
     <!-- Nav Menu -->
     <div class="nav-menu fixed-top is-scrolling">
 
@@ -41,20 +41,20 @@
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-dark navbar-expand-lg">
-                        <a class="navbar-brand" href="#">
-                            <img src="./library/img/logo.png" class="img-fluid" alt="logo" style="height: 60px; width: 60px;" />
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./library/img/logo.png" class="img-fluid" alt="logo" />
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item"> <a class="nav-link" href="#">TRANG CHỦ <span class="sr-only">(current)</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link active" href="#">TÍNH NĂNG</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#">HÌNH ẢNH</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#">TRỢ GIÚP</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#">LIÊN HỆ</a> </li>
-                                <li class="nav-item"><a href="#" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Cài đặt</a></li>
+                                <li class="nav-item"> <a class="nav-link active" href="#home">TRANG CHỦ <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#features">TÍNH NĂNG</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#gallery">HÌNH ẢNH</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#faq">TRỢ GIÚP</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#contact">LIÊN HỆ</a> </li>
+                                <li class="nav-item"> <a class="btn btn-outline-light my-3 my-sm-0 ml-lg-3" href="#download">Cài đặt</a> </li>
                             </ul>
                         </div>
                     </nav>
@@ -63,6 +63,7 @@
         </div>
     </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Lên đầu trang"><i class="ti-arrow-up"></i></button>
 
     <header class="bg-gradient" id="home">
         <div class="container mt-5">
@@ -137,7 +138,7 @@
                     <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
                     <h2>Khám phá ứng dụng</h2>
                     <p class="mb-4">Chỉ mất 2 phút để bạn khám phá ứng dụng Radioto thông qua một số hưỡng dẫn đơn giản. </p>
-                    <a href="https://bonbonvietnam.com/home/#noibat" class="btn btn-primary">Chi tiết</a>
+                    <a href="#noibat" class="btn btn-primary">Chi tiết</a>
                 </div>
             </div>
             <div class="perspective-phone">
@@ -222,16 +223,16 @@
 
             <ul class="nav nav-tabs nav-justified" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="https://bonbonvietnam.com/home/#communication">Bạn hữu quanh đây</a>
+                    <a class="nav-link" data-toggle="tab" href="#communication">Bạn hữu quanh đây</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="https://bonbonvietnam.com/home/#vehicle">Tìm kiếm phương tiện</a>
+                    <a class="nav-link" data-toggle="tab" href="#vehicle">Tìm kiếm phương tiện</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="https://bonbonvietnam.com/home/#help">Gửi tín hiệu giúp đỡ</a>
+                    <a class="nav-link" data-toggle="tab" href="#help">Gửi tín hiệu giúp đỡ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="https://bonbonvietnam.com/home/#livechat">Chat với bạn hữu</a>
+                    <a class="nav-link active" data-toggle="tab" href="#livechat">Chat với bạn hữu</a>
                 </li>
             </ul>
             <div class="tab-content">
@@ -364,8 +365,6 @@
     </div>
     <!-- // end .section -->
 
-
-
     <div class="section bg-gradient" id="download" tabindex="-1">
         <div class="container">
             <div class="call-to-action">
@@ -387,7 +386,7 @@
     <div class="light-bg py-5" id="contact" tabindex="-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-center text-lg-left">
+                <div class="col-lg-7 text-center text-lg-left">
                     <p class="mb-2"><span class="ti-dashboard mr-2"></span> CÔNG TY CỔ PHẦN COMPEDIA</p>
                     <p class="mb-2"><span class="ti-location-pin mr-2"></span> Hà Nội: Tầng 3, Số 1, Ngách 8, Ngõ 19, Trần Quang Diệu, Đống Đa, Hà Nội.</p>
                     <p class="mb-2"><span class="ti-headphone-alt mr-2"></span> Điện Thoại: (+84) 000 000 000</p>
@@ -400,7 +399,7 @@
 
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <div class="social-icons">
                         <a href="#"><span class="ti-facebook"></span></a>
                         <a href="#"><span class="ti-twitter-alt"></span></a>
@@ -415,12 +414,12 @@
     <!-- // end .section -->
     <footer class="my-5 text-center">
         <!-- Copyright removal is not prohibited! -->
-        <p class="mb-2"><small>COPYRIGHT © 2019. ALL RIGHTS RESERVED.</small></p>
+        <p class="mb-2"><small>&copy; Copyright <script>document.write(new Date().getFullYear())</script>, Compedia.</small></p>
 
         <small>
-            <a href="https://bonbonvietnam.com/home/#" class="m-2">PRESS</a>
-            <a href="https://bonbonvietnam.com/home/#" class="m-2">TERMS</a>
-            <a href="https://bonbonvietnam.com/home/#" class="m-2">PRIVACY</a>
+            <a href="#" class="m-2">PRESS</a>
+            <a href="#" class="m-2">TERMS</a>
+            <a href="#" class="m-2">PRIVACY</a>
         </small>
     </footer>
 
@@ -431,10 +430,32 @@
     <script src="./library/js/owl.carousel.min.js"></script>
     <!-- Custom JS -->
     <script src="./library/js/script.js"></script>
+    <!-- Scroll to top -->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 
 </html>
