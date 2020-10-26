@@ -1,9 +1,13 @@
 html {
   /*scroll-behavior: smooth;*/
 }
-html body .nav-menu .container .navbar-brand .img-fluid {
+html body .nav-menu .container .navbar .navbar-brand .img-fluid {
   height: 60px;
   width: 60px;
+  border-radius: 10px;
+}
+html body .nav-menu .container .navbar .collapse .navbar-nav .nav-link.active::after {
+  border-bottom: 2px solid #ffffff;
 }
 html body #myBtn {
   display: none;
@@ -15,16 +19,19 @@ html body #myBtn {
   border: none;
   outline: none;
   background: linear-gradient(hsl(17deg 95% 50%), hsl(42deg 94% 57%));
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   padding: 10px;
   border-radius: 4px;
 }
-html body #myBtn :hover {
+html body #myBtn:hover {
   background: linear-gradient(hsl(42deg 94% 57%), hsl(17deg 95% 50%));
-  color: white;
+  color: #ffffff;
 }
 html body #contact .container .social-icons a:hover {
   background: linear-gradient(hsl(42deg 94% 57%), hsl(17deg 95% 50%));
-  color: white;
+  color: #ffffff;
+}
+html body #gallery .container .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 20px;
 }

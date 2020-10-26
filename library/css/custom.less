@@ -1,3 +1,4 @@
+@color: #ffffff;
 @color-first: hsl(17deg 95% 50%);
 @color-second: hsl(42deg 94% 57%);
 
@@ -7,12 +8,28 @@ html {
     body {
         .nav-menu {
             .container {
-                .navbar-brand {
-                    .img-fluid {
-                        height: 60px; 
-                        width: 60px;
+                .navbar {
+                    .navbar-brand {
+                        .img-fluid {
+                            height: 60px; 
+                            width: 60px;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .collapse {
+                        .navbar-nav {
+                            .nav-link {
+                                &.active {
+                                    &::after {
+                                        border-bottom: 2px solid @color;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
+                
             }
         }
     
@@ -26,14 +43,14 @@ html {
             border: none;
             outline: none;
             background: linear-gradient(@color-first, @color-second);
-            color: white;
+            color: @color;
             cursor: pointer;
             padding: 10px;
             border-radius: 4px;
 
-            :hover {
+            &:hover {
                 background: linear-gradient(@color-second, @color-first);
-                color: white;
+                color: @color;
             }
         }
 
@@ -43,8 +60,18 @@ html {
                     a {
                         &:hover {
                             background: linear-gradient(@color-second, @color-first);
-                            color: white;
+                            color: @color;
                         }
+                    }
+                }
+            }
+        }
+
+        #gallery {
+            .container {
+                .owl-theme {
+                    .owl-nav.disabled+.owl-dots {
+                        margin-top: 20px;
                     }
                 }
             }
